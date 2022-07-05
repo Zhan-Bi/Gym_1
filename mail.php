@@ -14,12 +14,12 @@ $mail->isSMTP();                                      // Set mailer to use SMTP
 $mail->Host = 'smtp.mail.ru';  																							// Specify main and backup SMTP servers
 $mail->SMTPAuth = true;
 
-$mail->Username = 'nekozhanyymeshok@mail.ru'; // Ваш логин от почты с которой будут отправляться письма
-$mail->Password = '4p8GM57t45mZaCJg5qrR'; // Ваш пароль от почты с которой будут отправляться письма
-$mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
+$mail->Username = "nekozhanyymeshok@mail.ru"; // Ваш логин от почты с которой будут отправляться письма
+$mail->Password = "4p8GM57t45mZaCJg5qrR"; // Ваш пароль от почты с которой будут отправляться письма
+$mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
 $mail->Port = 465; // TCP port to connect to / этот порт может отличаться у других провайдеров
 
-$mail->setFrom('nekozhanyymeshok@mail.ru'); // от кого будет уходить письмо?
+$mail->From = "nekozhanyymeshok@mail.ru"; // от кого будет уходить письмо?
 $mail->addAddress('kar.one.to.one@gmail.com');     // Кому будет уходить письмо
 //$mail->addAddress('ellen@example.com');               // Name is optional
 //$mail->addReplyTo('info@example.com', 'Information');
